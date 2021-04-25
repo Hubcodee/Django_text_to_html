@@ -1,6 +1,4 @@
-# HelloWorldDjango
-This is a simple Hello world Django App
-Name : Shivanshu Anant Suryakar
-PRN : 1841048
-Class: T.Y Computer Engineering
-Subject: WPL
+# Text To HTML
+- Created the Text to HTML Django Project
+- Check the directory template/
+- Update the front end
