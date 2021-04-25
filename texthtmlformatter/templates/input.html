@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+{% block body %}
+
+<section id="intro">
+    <div class="intro-container wow fadeIn">
+        <form method="POST" action="/result" target="_blank">
+            <div class="form-group">
+            {% csrf_token %}
+            <p>Enter your text here</p>
+            <textarea class="form-control" rows="20" cols="100" id="textcode" name="textcode"></textarea>
+            <br>
+            <button type="submit" class="btn"   style="background-color:rgb(241,61,119);color:white;">Convert</button>
+            </div>
+        </form>
+    </div>
+  </section>
+  
+
+
+
+
+
+
+{% endblock body %}
+
