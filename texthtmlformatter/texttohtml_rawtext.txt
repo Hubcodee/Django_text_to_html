@@ -1,0 +1,27 @@
+/This is a simple page
+
+This page contains all the basics.
+
+- This is a list (1st element)
+- This is the 2nd element
+- This is the 3rd element
+
+Here is a paragraph. Notice the double line-break.
+
+You can format your text with various styles: *those words will be bold*.
+If you prefer italic, **it's easy too !**
+
+//Here is another title
+
+You can embed links, just like this: __http://www.wikipedia.org__
+
+///You got 3 different title sizes
+
+What about a nice image ?
+img__flower.png__Image Title__
+
+Embed tables:
+
+!! cell 1 !! cell 2 !! cell 3 !! cell 4 !!
+!! cell 1b !! cell 2b !! cell 3b !! cell 4b !!
+!! cell 1c !! cell 2c !! cell 3c !! cell 4c !!
