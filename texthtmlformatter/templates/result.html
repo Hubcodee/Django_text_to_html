@@ -10,10 +10,14 @@
 
         <p>Your Output is genererated below</p>
         {% autoescape off %}
-        <div style="color:black">
+        <div style="color:black" style="text-align: center;">
             {{ htmlcode }}
-        </div>
 
+        </div>
+        <div>
+            <p>{{ html }}</p>
+
+        </div>
         {% endautoescape %}
     </div>
 
