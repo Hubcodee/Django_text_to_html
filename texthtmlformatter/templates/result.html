@@ -1,22 +1,25 @@
 <html>
-
-<head>
+    <head>
     <title>Your HTML Page</title>
-</head>
-
+   
+    
+  <style>
+    body{ background-color: lightgrey;  margin: 2% 10%; }       
+</style>
+    </head>
 <body>
-    <div>
+    
+<div >
 
 
-        <p>Your Output is genererated below</p>
+        <h3 style="text-align:center">YOUR OUTPUT IS GENERATED BELOW</h3>
         {% autoescape off %}
         <div style="color:black">
-            {{ htmlcode }}
+            {{htmlcode}}
         </div>
+            
+        {% endautoescape %}</div>
 
-        {% endautoescape %}
-    </div>
-
-    </div>
+</div>
 
 </html>
