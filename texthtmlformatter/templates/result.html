@@ -1,26 +1,39 @@
 <html>
-    <head>
+
+<head>
     <title>Your HTML Page</title>
-   
-    
-  <style>
-    body{ background-color: lightgrey;  margin: 2% 10%; }       
-</style>
-    </head>
+
+
+    <style>
+        body {
+
+            margin: 2% 10%;
+        }
+    </style>
+</head>
+
 <body>
-    
-<div >
+
+    <div>
 
 
         <h3 style="text-align:center">YOUR OUTPUT IS GENERATED BELOW</h3>
         {% autoescape off %}
 
-        <div style="color:black" style="text-align: center;">
-            {{ htmlcode }}
-
+        <div style="color:black; ">
+            <div style="text-align: center; background-color:lavender;">
+                <p>{{ htmlcode }}</p>
+            </div>
         </div>
-        <div>
-            <p>{{ html }}</p>
+        ,
+        <hr>
+        <h3 style="text-align:center">YOUR HTML CODE IS GENERATED BELOW</h3>
+        <div style="font-size: 14px;">
+            <code>
+                <pre>
+                    <p style="background-color: gainsboro; text-align: center;">{{ html }}</p>
+                </pre>
+            </code>
 
         </div>
         {% endautoescape %}
