@@ -17,8 +17,22 @@ def result(request):
         # html generated code is coming from this function
         htmlcode = formatHtml("\n\n"+text+"\n\n")
         print(htmlcode)
+        with open("text.txt", "w") as f:
+            f.writelines(htmlcode)
 
-        return(render(request, "result.html", {"htmlcode": str(htmlcode)}))
+        with open("text.txt", 'r') as f:
+            lines = f.read()
+
+        with open("text.txt", 'w') as f:
+            for line in lines:
+                f.write(line.replace('<', '&lt;'))
+            for line in lines:
+                f.write(line.replace('>', '&gt;'))
+
+        with open("text.txt", 'r') as f:
+            lines = f.read()
+
+        return(render(request, "result.html", {"htmlcode": str(htmlcode), "html": lines}))
     else:
         htmlcode = "<h2>Oops there seems some problem, Please go back and resumit your Text</h2>"
         return(HttpResponse(htmlcode))
