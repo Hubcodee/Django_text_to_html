@@ -1,26 +1,65 @@
 {% extends 'base.html' %}
+
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+ <script type="text/javascript" src='https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js'
+        referrerpolicy="origin">
+        </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 {% block body %}
 
 <section id="intro">
     <div class="intro-container wow fadeIn">
-        <form method="POST" action="/result" target="_blank">
+        <form method="POST" action="/result" target="_blank" style="margin-left:auto;margin-right:auto;">
             <div class="form-group">
             {% csrf_token %}
             <p>Enter your text here</p>
-            <textarea class="form-control" rows="20" cols="100" id="textcode" name="textcode"></textarea>
+            <textarea class="form-control" rows="30" cols="100" id="textcode" name="textcode" ></textarea>
             <br>
-            <button type="submit" class="btn"   style="background-color:rgb(241,61,119);color:white;">Convert</button>
+            <button type="submit" class="btn "   style="background-color:rgb(241,61,119);color:white;height:6vh;width:6vw;font-size:1vw;">CONVERT</button>
             </div>
         </form>
     </div>
   </section>
-  
 
 
+
+<script type="text/javascript">
+    tinymce.init({
+        selector: '#textcode',
+        width: 800,
+        height: 500,
+        plugins: [
+            'advlist autolink link image lists charmap print preview hr anchor pagebreak',
+            'searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking',
+            'table emoticons template paste help'
+        ],
+        toolbar: 'undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | ' +
+            'bullist numlist outdent indent | link image | print preview media fullpage | ' +
+            'forecolor backcolor emoticons | help',
+        menu: {
+            favs: { title: 'My Favorites', items: 'code visualaid | searchreplace | emoticons' }
+        },
+        menubar: 'favs file edit view insert format tools table help',
+        content_css: 'css/content.css'
+    });
+</script>
+<style>
+    /* on mobile browsers, I set a width of 100% */
+table.mceLayout, textarea.tinyMCE {
+    width: 100% !important;
+}
+
+/* on large screens, I use a different layout, so 600px are sufficient */
+@media only screen and (min-width: 600px) {
+    table.mceLayout, textarea.richEditor {
+       width: 600px !important;
+    }
+}
+</style>
 
 
 

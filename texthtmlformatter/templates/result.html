@@ -27,11 +27,12 @@
         </div>
         ,
         <hr>
-        <h3 style="text-align:center">YOUR HTML CODE IS GENERATED BELOW</h3>
-        <div>
-            <code>
-                <pre>
-                    <p style="background-color: gainsboro; text-align: center; font-size:large;">{{ html }}</p>
+        <h3 style="text-align:center;padding:auto;">YOUR HTML CODE IS GENERATED BELOW</h3>
+        <div style="overflow-wrap: break-word;">
+            <code >
+                <pre style="padding:auto;">
+                    <div style="background-color: gainsboro; font-size:large;margin:auto;padding:auto;word-wrap: break-word;white-space: pre-wrap;word-break: break-word;"><p>{{ html|safe }}</p>
+                    </div>
                 </pre>
             </code>
 
@@ -40,6 +41,6 @@
     </div>
 
     </div>
-
+</body>
 
 </html>
