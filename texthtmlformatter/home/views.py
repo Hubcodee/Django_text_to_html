@@ -1,8 +1,6 @@
 from django.shortcuts import render, HttpResponse
-from .texttohtml import formatHtml
-from django.template.loader import render_to_string
-
-from lxml import etree, html
+from bs4 import BeautifulSoup
+import re
 
 
 def index(request):
@@ -16,14 +14,22 @@ def inputfile(request):
 def result(request):
     if request.method == "POST":
         text = request.POST.get("textcode")
-        # html generated code is coming from this function
-        htmlcode = formatHtml("\n\n"+text+"\n\n")
-        print(htmlcode)
-        # document_root = html.fromstring(htmlcode)
-        # htmlcode=etree.tostring(document_root, encoding='unicode', pretty_print=True)
-        from bs4 import BeautifulSoup
-        htmlcode=BeautifulSoup(htmlcode, 'html.parser').prettify()
-        print(htmlcode)
+        # print("TEXT\n"+text)
+
+
+        orig_prettify = BeautifulSoup.prettify
+        r = re.compile(r'^(\s*)', re.MULTILINE)
+
+        # this line creates our customised prettify function from  the provided prettify from beautiful soup
+        def prettify(self, encoding=None, formatter="minimal", indent_width=4):
+            return r.sub(r'\1' * indent_width, orig_prettify(self, encoding, formatter))
+
+        BeautifulSoup.prettify = prettify
+        htmlcode=BeautifulSoup(text, 'html.parser')
+
+        # this way we are adding our own parameter to prettify function
+        htmlcode=htmlcode.prettify(indent_width=3)
+        # print("PREETYPRINT\n"+htmlcode)
         with open("text.txt", "w") as f:
             f.writelines(htmlcode)
 
@@ -38,8 +44,7 @@ def result(request):
 
         with open("text.txt", 'r') as f:
             lines = f.read()
-        # htmlformat = request.POST.get("text")
-        # lines = str(htmlcode).replace("<", "\n<")
+
 
         return(render(request, "result.html", {"htmlcode": str(htmlcode), "html": lines}))
     else:

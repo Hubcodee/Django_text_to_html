@@ -1,266 +1,203 @@
-&lt;p>
- &lt;p style="text-align: center; font-size: 15px;">
-  &lt;img alt="TinyMCE Logo" height="97" src="images/glyph-tinymce@2x.png" title="TinyMCE Logo" width="110"/>
- &lt;/p>
+&lt;p style="text-align: center;">
+   &lt;img alt="TinyMCE Logo" height="97" src="images/glyph-tinymce@2x.png" title="TinyMCE Logo" width="110"/>
 &lt;/p>
 &lt;h2 style="text-align: center;">
- Welcome to the TinyMCE Cloud demo!
+   Welcome to the TinyMCE editor demo!
 &lt;/h2>
-&lt;br/>
-&lt;h5 style="text-align: center;">
- Note, this includes some "enterprise/premium" features.
- &lt;br/>
- Visit the
- &lt;a href="pricing">
-  pricing page
- &lt;/a>
- to learn more about our premium plugins.
-&lt;/h5>
-&lt;br/>
-&lt;p>
- Please try out the features provided in this full featured example.
-&lt;/p>
 &lt;h2>
- Got questions or need help?
+   Got questions or need help?
 &lt;/h2>
 &lt;ul>
- &lt;li>
-  Our
-  &lt;a class="mceNonEditable" href="http://127.0.0.1:8000/">
-   documentation
-  &lt;/a>
-  is a great resource for learning how to configure TinyMCE.
- &lt;/li>
- &lt;li>
-  Have a specific question? Try the
-  &lt;a href="https://stackoverflow.com/questions/tagged/tinymce" rel="noopener" target="_blank">
-   &lt;code>
-    tinymce
-   &lt;/code>
-   tag at Stack Overflow
-  &lt;/a>
-  .
- &lt;/li>
- &lt;li>
-  We also offer enterprise grade support as part of
-  &lt;a href="pricing">
-   TinyMCE premium subscriptions
-  &lt;/a>
-  .
- &lt;/li>
- &lt;br/>
+   &lt;li>
+      Our
+      &lt;a href="http://127.0.0.1:8000/">
+         documentation
+      &lt;/a>
+      is a great resource for learning how to configure TinyMCE.
+   &lt;/li>
+   &lt;li>
+      Have a specific question? Try the
+      &lt;a href="https://stackoverflow.com/questions/tagged/tinymce" rel="noopener" target="_blank">
+         &lt;code>
+            tinymce
+         &lt;/code>
+         tag at Stack Overflow
+      &lt;/a>
+      .
+   &lt;/li>
+   &lt;li>
+      We also offer enterprise grade support as part of
+      &lt;a href="pricing">
+         TinyMCE premium plans
+      &lt;/a>
+      .
+   &lt;/li>
 &lt;/ul>
 &lt;h2>
- A simple table to play with
+   A simple table to play with
 &lt;/h2>
 &lt;table border="1" style="border-collapse: collapse; width: 100%;">
- &lt;br/>
- &lt;thead>
-  &lt;tr>
-   &lt;br/>
-   &lt;th>
-    Product
-   &lt;/th>
-   &lt;br/>
-   &lt;th>
-    Cost
-   &lt;/th>
-   &lt;br/>
-   &lt;th>
-    Really?
-   &lt;/th>
-   &lt;br/>
-  &lt;/tr>
-  &lt;br/>
- &lt;/thead>
- &lt;br/>
- &lt;tbody>
-  &lt;tr>
-   &lt;td>
-    TinyMCE Cloud
-   &lt;/td>
-   &lt;td>
-    Get started for free
-   &lt;/td>
-   &lt;td>
-    YES!
-   &lt;/td>
-   &lt;br/>
-  &lt;/tr>
-  &lt;tr>
-   &lt;td>
-    Plupload
-   &lt;/td>
-   &lt;td>
-    Free
-   &lt;/td>
-   &lt;td>
-    YES!
-   &lt;/td>
-   &lt;br/>
-  &lt;/tr>
-  &lt;br/>
- &lt;/tbody>
- &lt;br/>
+   &lt;thead>
+      &lt;tr>
+         &lt;th>
+            Product
+         &lt;/th>
+         &lt;th>
+            Cost
+         &lt;/th>
+         &lt;th>
+            Really?
+         &lt;/th>
+      &lt;/tr>
+   &lt;/thead>
+   &lt;tbody>
+      &lt;tr>
+         &lt;td>
+            TinyMCE
+         &lt;/td>
+         &lt;td>
+            Free
+         &lt;/td>
+         &lt;td>
+            YES!
+         &lt;/td>
+      &lt;/tr>
+      &lt;tr>
+         &lt;td>
+            Plupload
+         &lt;/td>
+         &lt;td>
+            Free
+         &lt;/td>
+         &lt;td>
+            YES!
+         &lt;/td>
+      &lt;/tr>
+   &lt;/tbody>
 &lt;/table>
 &lt;h2>
- Found a bug?
+   Found a bug?
 &lt;/h2>
-&lt;br/>
 &lt;p>
- If you think you have found a bug please create an issue on the
- &lt;a href="https://github.com/tinymce/tinymce/issues">
-  GitHub repo
- &lt;/a>
- to report it to the developers.
+   If you think you have found a bug please create an issue on the
+   &lt;a href="https://github.com/tinymce/tinymce/issues">
+      GitHub repo
+   &lt;/a>
+   to report it to the developers.
 &lt;/p>
 &lt;h2>
- Finally ...
+   Finally ...
 &lt;/h2>
-&lt;br/>
 &lt;p>
- Don't forget to check out our other product
- &lt;a href="http://www.plupload.com" rel="noopener" target="_blank">
-  Plupload
- &lt;/a>
- , your ultimate upload solution featuring HTML5 upload support.
+   Don't forget to check out our other product
+   &lt;a href="http://www.plupload.com" rel="noopener" target="_blank">
+      Plupload
+   &lt;/a>
+   , your ultimate upload solution featuring HTML5 upload support.
 &lt;/p>
-&lt;br/>
 &lt;p>
- Thanks for supporting TinyMCE! We hope it helps you and your users create great content.
- &lt;br/>
- All the best from the TinyMCE team.
-&lt;/p>
-<p&gt;
- <p style="text-align: center; font-size: 15px;"&gt;
-  <img alt="TinyMCE Logo" height="97" src="images/glyph-tinymce@2x.png" title="TinyMCE Logo" width="110"/&gt;
- </p&gt;
+   Thanks for supporting TinyMCE! We hope it helps you and your users create great content.
+   &lt;br/>
+   All the best from the TinyMCE team.
+&lt;/p><p style="text-align: center;"&gt;
+   <img alt="TinyMCE Logo" height="97" src="images/glyph-tinymce@2x.png" title="TinyMCE Logo" width="110"/&gt;
 </p&gt;
 <h2 style="text-align: center;"&gt;
- Welcome to the TinyMCE Cloud demo!
+   Welcome to the TinyMCE editor demo!
 </h2&gt;
-<br/&gt;
-<h5 style="text-align: center;"&gt;
- Note, this includes some "enterprise/premium" features.
- <br/&gt;
- Visit the
- <a href="pricing"&gt;
-  pricing page
- </a&gt;
- to learn more about our premium plugins.
-</h5&gt;
-<br/&gt;
-<p&gt;
- Please try out the features provided in this full featured example.
-</p&gt;
 <h2&gt;
- Got questions or need help?
+   Got questions or need help?
 </h2&gt;
 <ul&gt;
- <li&gt;
-  Our
-  <a class="mceNonEditable" href="http://127.0.0.1:8000/"&gt;
-   documentation
-  </a&gt;
-  is a great resource for learning how to configure TinyMCE.
- </li&gt;
- <li&gt;
-  Have a specific question? Try the
-  <a href="https://stackoverflow.com/questions/tagged/tinymce" rel="noopener" target="_blank"&gt;
-   <code&gt;
-    tinymce
-   </code&gt;
-   tag at Stack Overflow
-  </a&gt;
-  .
- </li&gt;
- <li&gt;
-  We also offer enterprise grade support as part of
-  <a href="pricing"&gt;
-   TinyMCE premium subscriptions
-  </a&gt;
-  .
- </li&gt;
- <br/&gt;
+   <li&gt;
+      Our
+      <a href="http://127.0.0.1:8000/"&gt;
+         documentation
+      </a&gt;
+      is a great resource for learning how to configure TinyMCE.
+   </li&gt;
+   <li&gt;
+      Have a specific question? Try the
+      <a href="https://stackoverflow.com/questions/tagged/tinymce" rel="noopener" target="_blank"&gt;
+         <code&gt;
+            tinymce
+         </code&gt;
+         tag at Stack Overflow
+      </a&gt;
+      .
+   </li&gt;
+   <li&gt;
+      We also offer enterprise grade support as part of
+      <a href="pricing"&gt;
+         TinyMCE premium plans
+      </a&gt;
+      .
+   </li&gt;
 </ul&gt;
 <h2&gt;
- A simple table to play with
+   A simple table to play with
 </h2&gt;
 <table border="1" style="border-collapse: collapse; width: 100%;"&gt;
- <br/&gt;
- <thead&gt;
-  <tr&gt;
-   <br/&gt;
-   <th&gt;
-    Product
-   </th&gt;
-   <br/&gt;
-   <th&gt;
-    Cost
-   </th&gt;
-   <br/&gt;
-   <th&gt;
-    Really?
-   </th&gt;
-   <br/&gt;
-  </tr&gt;
-  <br/&gt;
- </thead&gt;
- <br/&gt;
- <tbody&gt;
-  <tr&gt;
-   <td&gt;
-    TinyMCE Cloud
-   </td&gt;
-   <td&gt;
-    Get started for free
-   </td&gt;
-   <td&gt;
-    YES!
-   </td&gt;
-   <br/&gt;
-  </tr&gt;
-  <tr&gt;
-   <td&gt;
-    Plupload
-   </td&gt;
-   <td&gt;
-    Free
-   </td&gt;
-   <td&gt;
-    YES!
-   </td&gt;
-   <br/&gt;
-  </tr&gt;
-  <br/&gt;
- </tbody&gt;
- <br/&gt;
+   <thead&gt;
+      <tr&gt;
+         <th&gt;
+            Product
+         </th&gt;
+         <th&gt;
+            Cost
+         </th&gt;
+         <th&gt;
+            Really?
+         </th&gt;
+      </tr&gt;
+   </thead&gt;
+   <tbody&gt;
+      <tr&gt;
+         <td&gt;
+            TinyMCE
+         </td&gt;
+         <td&gt;
+            Free
+         </td&gt;
+         <td&gt;
+            YES!
+         </td&gt;
+      </tr&gt;
+      <tr&gt;
+         <td&gt;
+            Plupload
+         </td&gt;
+         <td&gt;
+            Free
+         </td&gt;
+         <td&gt;
+            YES!
+         </td&gt;
+      </tr&gt;
+   </tbody&gt;
 </table&gt;
 <h2&gt;
- Found a bug?
+   Found a bug?
 </h2&gt;
-<br/&gt;
 <p&gt;
- If you think you have found a bug please create an issue on the
- <a href="https://github.com/tinymce/tinymce/issues"&gt;
-  GitHub repo
- </a&gt;
- to report it to the developers.
+   If you think you have found a bug please create an issue on the
+   <a href="https://github.com/tinymce/tinymce/issues"&gt;
+      GitHub repo
+   </a&gt;
+   to report it to the developers.
 </p&gt;
 <h2&gt;
- Finally ...
+   Finally ...
 </h2&gt;
-<br/&gt;
 <p&gt;
- Don't forget to check out our other product
- <a href="http://www.plupload.com" rel="noopener" target="_blank"&gt;
-  Plupload
- </a&gt;
- , your ultimate upload solution featuring HTML5 upload support.
+   Don't forget to check out our other product
+   <a href="http://www.plupload.com" rel="noopener" target="_blank"&gt;
+      Plupload
+   </a&gt;
+   , your ultimate upload solution featuring HTML5 upload support.
 </p&gt;
-<br/&gt;
 <p&gt;
- Thanks for supporting TinyMCE! We hope it helps you and your users create great content.
- <br/&gt;
- All the best from the TinyMCE team.
+   Thanks for supporting TinyMCE! We hope it helps you and your users create great content.
+   <br/&gt;
+   All the best from the TinyMCE team.
 </p&gt;
